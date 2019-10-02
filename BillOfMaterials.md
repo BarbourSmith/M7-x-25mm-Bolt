@@ -2,3 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
+|M7x25mm Bolt|1|$5.31|https://www.mcmaster.com/91290a166|
+|Total: |1|$5.31| |
+
+ 3xCOG MSRP: $15.93

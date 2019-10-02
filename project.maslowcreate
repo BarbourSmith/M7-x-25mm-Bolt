@@ -10,6 +10,99 @@
             "topLevel": true,
             "allAtoms": [
                 {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 196,
+                    "y": 85,
+                    "uniqueID": 585987,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 12
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 205,
+                    "y": 172,
+                    "uniqueID": 183153,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 7
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 336,
+                    "y": 86,
+                    "uniqueID": 176571,
+                    "ioValues": [
+                        {
+                            "name": "height",
+                            "ioValue": 7
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 331,
+                    "y": 174,
+                    "uniqueID": 576851,
+                    "ioValues": [
+                        {
+                            "name": "height",
+                            "ioValue": -25
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 475,
+                    "y": 116,
+                    "uniqueID": 460519,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 444861",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "3D shape 978870",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 471021",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 444861",
+                            "ioValue": 10
+                        }
+                    ],
+                    "removeCutawayGeometry": true
+                },
+                {
+                    "atomType": "Add BOM Tag",
+                    "name": "Add BOM Tag",
+                    "x": 650,
+                    "y": 114,
+                    "uniqueID": 980901,
+                    "ioValues": [],
+                    "BOMitem": {
+                        "BOMitemName": "M7x25mm Bolt",
+                        "numberNeeded": 1,
+                        "costUSD": 5.31,
+                        "source": "https://www.mcmaster.com/91290a166",
+                        "totalNeeded": 0
+                    }
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 1001,
@@ -17,7 +110,43 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 585987,
+                    "ap2ID": 176571
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 183153,
+                    "ap2ID": 576851
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 471021",
+                    "ap1ID": 176571,
+                    "ap2ID": 460519
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 978870",
+                    "ap1ID": 576851,
+                    "ap2ID": 460519
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 460519,
+                    "ap2ID": 980901
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": 980901
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
